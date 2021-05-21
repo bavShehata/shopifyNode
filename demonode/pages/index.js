@@ -6,7 +6,8 @@ const Index = () => {
   console.log(open);
   const handleResources = (resources) => {
     setOpen(false);
-    console.log(resources);
+    const idFromResources = resources.selection.map((product) => product.id);
+    console.log(idFromResources);
   };
   return (
     <Page
